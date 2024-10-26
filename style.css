@@ -1,0 +1,246 @@
+body {
+    background-image: url(bg.img);
+    background-position: center;
+    /* Changed to center for better appearance */
+    padding-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+header {
+    background-color: grey;
+    padding: 8px 20px;
+    /* Added side padding */
+    border-radius: 8px;
+}
+
+.main {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the items */
+}
+
+li {
+    display: inline;
+    margin-left: 50px;
+}
+
+li:hover {
+    color: blue;
+    text-decoration: underline red;
+    cursor: pointer;
+}
+
+ul {
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo {
+    margin-bottom: 20px;
+    /* Center the logo */
+}
+
+.bag {
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.men-holding {
+    margin: 0 auto;
+    /* Center the image */
+    z-index: 2;
+}
+
+.main-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 180px;
+}
+
+.paragraph {
+    margin: 50px auto;
+    /* Center the paragraph */
+    font-size: 60px;
+    font-family: cursive;
+    color: blue;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    /* Center text */
+}
+
+.items {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contents {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid white;
+    background-color: rgb(255, 248, 242);
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.75);
+    width: 250px;
+    /* Fixed width for items */
+    max-width: 90%;
+    /* Ensure it doesn't exceed screen size */
+}
+
+hr {
+    color: white;
+}
+
+.shopnow {
+    padding: 10px 20px;
+    /* Added side padding */
+    background-color: green;
+    border-color: green;
+    border-radius: 8px;
+    color: white;
+}
+
+.shopnow:hover {
+    opacity: 60%;
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
+.items2 {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video {
+    margin-top: 80px;
+    width: 100%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    ul {
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+
+    li {
+        display: inline;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .main-body {
+        margin-left: 10px;
+    }
+
+    .paragraph {
+        margin: 50px 0;
+        /* Center the paragraph */
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .men-holding {
+        margin-top: -10px;
+        /* Center the image */
+        text-align: center;
+
+    }
+
+    .contents {
+        width: 90%;
+        /* Full width on smaller screens */
+        max-width: 100%;
+        /* Prevent overflow */
+    }
+
+    li {
+        margin-right: 20px;
+        /* Reduce margin for smaller screens */
+    }
+
+    .bag {
+        margin-left: 0;
+        /* Center the bag icon */
+    }
+}
+
+@media (max-width: 480px) {
+    .paragraph {
+        font-size: 30px;
+        /* Smaller font size for very small screens */
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+
+    li {
+        display: inline;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .contents {
+        padding: 15px;
+        /* Reduce padding */
+    }
+
+    .shopnow {
+        padding: 8px 15px;
+        /* Adjust padding for smaller buttons */
+    }
+}
